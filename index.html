@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Laberinto Robotico</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dh-body">
+  <div class="dhs-panelSuperior">
+    <ul id="dhs-lista">
+      <li data-id="arriba">moverArriba()</li>
+      <li data-id="abajo">moverAbajo()</li>
+      <li data-id="derecha">moverDerecha()</li>
+      <li data-id="izquierda">moverIzquierda()</li>
+    </ul>
+    <div id="dhs-div-lista2">
+      <ul id="dhs-lista2"></ul>
+      <i class="fa-sharp fa-solid fa-trash-can" id="dhs-erase" onclick="erase()"></i>
+    </div>
+    <div id="panelJuego">
+      <div id="elemento-escenario"></div>
+      <button id="dhs-button" onclick="sendOrders()">Ejecutar</button>
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"
+    integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.js"
+    integrity="sha512-d+dtcSjz831KbYcB3pS7cd3cqlaZ/gbbnZWC4KeLM8AToNtm83Rbc5au5k3bFBh6EwlphOGJtj7oDg6k+NGbPA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <script src="sortable_blocks.js" defer></script>
+  <script src="clases.js"></script>
+  <script src="instancias.js" defer></script>
+  <script src="interface.js" defer></script>
+</body>
+
+</html>
